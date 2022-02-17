@@ -1,0 +1,92 @@
+.main_container{
+    display: flex;
+    width: 100%;
+    margin-top: 4rem;
+    .main{
+        width: 18%;
+        .maincontainer {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+            height: 100%;
+            background-color: rgb(37, 34, 34);
+            .material{
+                font-weight: bold;
+                padding: 1.5rem 0;
+            }
+            .main_side_nav_main{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+        .main_side_nav{
+            display: flex;
+            max-height: 50%;
+            overflow-y: scroll;
+            flex-direction: column;
+            
+           
+            line-height: 3rem;
+            text-align: left;
+            li {
+                list-style: none;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                li{
+                list-style:none;
+                font-size: 1rem;
+                cursor: pointer;
+                margin: 0.5rem 0;
+                padding-left: 1rem;
+                &:hover{
+                    background-color:  rgb(151, 142, 144);
+                    border-radius: 0.5rem;
+                }
+                &:first-child{
+                    background-color:  rgb(241, 81, 108);
+                    border-radius: 0.5rem;
+                }
+                }
+            }
+        }
+    }
+        .upgrade{
+            background: none;
+            color: white;
+            background-color: rgb(230, 27, 61);
+            border-radius: 5px;
+            font-size: 0.8rem;
+            border: none;
+            padding: 1rem;
+        
+        }
+        }
+    }
+    @media screen and (max-width:600px) {
+        .main{
+            display: none;
+        }
+    }
+    .CardMulti{
+        display: flex;
+        width: 55%;
+        height: 50%;
+        gap:3rem;
+    }
+    @media screen and (max-width:600px) {
+        .CardMulti{
+           flex-direction: column;
+           width: 100%;
+           margin: auto;
+           justify-content: center;
+           padding-left: 10rem;
+        }
+    }
+}
