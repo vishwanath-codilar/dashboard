@@ -3,13 +3,16 @@ import { render } from '@testing-library/react';
 import style from "./DashBoard.style.module.scss"
 import React, { Component } from 'react'
 import Card from '../components/card.component';
-export default class Side_bar extends Component {
+
+export default class DashBoardComponent extends Component {
     renderSideBar() {
+        const {HandelCancel,cancel}=this.props;
         return (
           
-            <div className={style.maincontainer}>
+            <div className={cancel?(style.maincontainerC):(style.maincontainer)}>
                 <div className={style.material}>
                     <span>Material Dashboard 2</span>
+                     <img src="./img/icons8-cancel.svg" alt="cancel icon" onClick={HandelCancel}></img>
                 </div>
                 <hr></hr>
                 <div className={style.main_side_nav_main}>
@@ -20,9 +23,9 @@ export default class Side_bar extends Component {
                         <li>Virtual Reality</li>
                         <li>RTL</li>
                         <li>Notifications</li>
-                    </ul>
-                    <li> ACCOUNT PAGES </li>
-                    <ul>
+                    
+                    <p> ACCOUNT PAGES </p>
+                   
                         <li>Dashboard</li>
                         <li>Dashboard</li>
                     </ul>

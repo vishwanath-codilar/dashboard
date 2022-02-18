@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Card_index from './components'
-import DashIndex from './DashBoard'
+import DashBoardContainer from './DashBoard/DashBoard.container'
 
 import style from "./App.style.module.scss"
 
@@ -54,7 +54,7 @@ export default class App extends Component {
         <div className={style.Header}>
           {this.renderHeader()}
         </div>
-        <DashIndex className={style.DashB}/>
+        <DashBoardContainer className={style.DashB}/>
        
       </div>
       </>

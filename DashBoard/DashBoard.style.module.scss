@@ -17,6 +17,8 @@
             .material{
                 font-weight: bold;
                 padding: 1.5rem 0;
+                display: flex;
+                justify-content: space-between;
             }
             .main_side_nav_main{
                 display: flex;
@@ -56,6 +58,19 @@
                 }
             }
         }
+        ::-webkit-scrollbar {
+            width: 2px;
+          }
+          
+          
+          ::-webkit-scrollbar-track {
+            background: rgb(37, 34, 34);
+          }
+            
+         
+          ::-webkit-scrollbar-thumb {
+            background: #888; 
+          }
     }
         .upgrade{
             background: none;
@@ -67,6 +82,10 @@
             padding: 1rem;
         
         }
+        }
+        .maincontainerC{
+            display: none;
+            transition: 300s;
         }
     }
     @media screen and (max-width:600px) {
